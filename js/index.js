@@ -81,9 +81,9 @@ $(document).ready(function () {
     // Đoạn mã xử lý hiển thị modal ở đây
     var encodedProduct = $(this).data("product");
     product = JSON.parse(decodeURIComponent(encodedProduct));
-    $(".js-name-detail").append(product.name);
-    $(".mtext-106").append(`$${product.price}`);
-    $(".pro-discription").append(product.description);
+    $(".js-name-detail").html(product.name);
+    $(".mtext-106").html(`$${product.price}`);
+    $(".pro-discription").html(product.description);
 
     // Bây giờ bạn có thể sử dụng đối tượng product trong xử lý tiếp theo
     console.log("product", product);
